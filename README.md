@@ -49,7 +49,7 @@ bash xdg-open calculator.html
 For Software:
 
 # Screenshots (Add at least 3)
-![Calculator Interface]([calculator_interface.png](https://github.com/aravind-k-kaippenchery/tinker-hack-project/blob/main/calculator_interface.png))
+![Calculator Interface](https://github.com/aravind-k-kaippenchery/tinker-hack-project/blob/main/calculator_interface.png)
 *This screenshot shows the floating calculator with draggable buttons and the hand-controlled cursor using MediaPipe.*
 
 
