@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #0d0d0d 0%, #1a1a1a 100%);
+  font-family: 'Segoe UI', sans-serif;
+  width: 400px;
+  height: 600px;
+  position: relative;
+}
+
+#screen {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 240px;
+  height: 50px;
+  font-size: 1.6rem;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #00ffc3;
+  border: 2px solid #00ffc3;
+  border-radius: 10px;
+  box-shadow:
+    0 0 16px rgba(0, 255, 195, 0.6),
+    inset 0 0 8px rgba(0, 255, 195, 0.5),
+    0 0 30px rgba(0, 255, 195, 0.1);
+  z-index: 10;
+  text-align: right;
+  letter-spacing: 1px;
+  backdrop-filter: blur(5px);
+}
+
+.button {
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  font-size: 1.1rem;
+  background: linear-gradient(145deg, #0e76fd, #004b9a);
+  color: #ffffff;
+  border: 1px solid rgba(0, 174, 255, 0.5);
+  border-radius: 12px;
+  box-shadow:
+    0 4px 12px rgba(0, 174, 255, 0.4),
+    inset 0 0 4px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 
+    0 6px 16px rgba(0, 174, 255, 0.7),
+    inset 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+#cursor {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  font-size: 28px;
+  pointer-events: none;
+  z-index: 15;
+  transition: top 0.1s ease-out, left 0.1s ease-out;
+  user-select: none;
+  text-shadow: 0 0 10px #00eaff;
+  filter: drop-shadow(0 0 6px #00eaff);
+}
+
+#message {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: #00ffe6;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 230, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 230, 0.2);
+  z-index: 20;
+}
+
+
+#top-bar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 10;
+}
+
+#challenge {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: #ffd700;
+  font-size: 1rem;
+  background: rgba(20, 20, 20, 0.75);
+  padding: 6px 10px;
+  border-radius: 8px;
+  width: 200px;
+  font-family: 'Courier New', monospace;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+}
+
+#roast {
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  color: #ff4d4d;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+}

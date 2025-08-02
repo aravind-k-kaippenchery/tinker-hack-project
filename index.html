@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Floating Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="text" id="screen" disabled />
+  <div id="challenge"></div>
+  <div id="roast"></div>
+<div id="roast"></div>
+  <div id="cursor">🖐️</div>
+  <div id="message">Loading hand detection...</div>
+
+  <!-- Calculator Buttons -->
+  <div id="buttons-container">
+    <input type="button"  class="button" value="7">
+    <input type="button" class="button" value="8">
+    <input type="button" class="button" value="9">
+    <input type="button" class="button" value="/">
+    <input type="button" class="button" value="4">
+    <input type="button" class="button" value="5">
+    <input type="button" class="button" value="6">
+    <input type="button" class="button" value="*">
+    <input type="button" class="button" value="1">
+    <input type="button" class="button" value="2">
+    <input type="button" class="button" value="3">
+    <input type="button" class="button" value="-">
+    <input type="button" class="button" value="0">
+    <input type="button" class="button" value=".">
+    <input type="button" class="button" value="=">
+    <input type="button" class="button" value="+">
+    <input type="button" class="button" value="sin">
+    <input type="button" class="button" value="cos">
+    <input type="button" class="button" value="tan">
+    <input type="button" class="button" value="√">
+    <input type="button" class="button" value="C">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
